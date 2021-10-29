@@ -1,7 +1,5 @@
-# Learn Terraform - Lambda functions and API Gateway
+# Elastic Beanstalk Deployment
 
-AWS Lambda functions and API gateway are often used to create serverlesss
-applications.
+This terraform deployment folder will grab a specified jar file from the target folder of the spring boot service and store it as an object in an s3 bucket.
+The deployment will then kick off an Elastic Beanstalk pipeline that will spin up an ec2 instance to run the jar file and an elastic load balancer to route traffic to the ec2.
 
-Follow along with this [tutorial on HashiCorp
-Learn](https://learn.hashicorp.com/tutorials/terraform/lambda-api-gateway?in=terraform/aws).
